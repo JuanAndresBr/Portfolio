@@ -2,6 +2,7 @@ import Image from "next/image";
 import image from "../../public/fondo.png";
 import styles from "./page.module.css";
 import perfil from "../../public/perfil.jpg"
+import NavBar from "@/components/NavBar/NavBar";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
