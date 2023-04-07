@@ -1,0 +1,33 @@
+@import "../../app/variables.css";
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid var(--color-cuarto);
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 20px;
+}
+.Link h2 {
+  color: var(--color-terciario);
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+.Link h2:hover {
+  border-bottom: 3px solid var(--color-secundario);
+}
+
+.active h2 {
+  color: var(--color-secundario);
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
