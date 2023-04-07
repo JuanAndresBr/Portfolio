@@ -20,7 +20,7 @@ export default function NavBar() {
           <h2>Habilidades</h2>
         </Link>
         <Link href={"/projects"} className={pathname==="/projects" ? styles.active :styles.Link}>
-          <h2>Projectos</h2>
+          <h2>Proyectos</h2>
         </Link>
         <Link href={"/contact"} className={pathname==="/contact" ? styles.active :styles.Link}>
           <h2>Contacto</h2>

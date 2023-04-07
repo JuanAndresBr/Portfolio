@@ -1,0 +1,46 @@
+
+
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-cuarto);
+  border-radius: 10px;
+  padding: 30px;
+  width: 60%;
+  align-items: center;
+  margin: 20px;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box a {
+  color: var(--color-cuarto);
+  text-decoration: none;
+}
+
+.LinkProject{
+  margin-top: 20px;
+  border: 2px solid var(--color-cuarto);
+  padding: 20px;
+}
+.LinkProject:hover{
+  background-color: var(--color-quinto);
+}
+
+.imagen{
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.imagen:hover{
+  transform: scale(1.2);
+}
