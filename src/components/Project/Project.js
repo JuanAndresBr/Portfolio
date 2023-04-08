@@ -19,13 +19,15 @@ export default function proyecto({
           <a href={LinkGitHub} target="_blank">
             <Image src={GitHub} width="60" height="60" />
           </a>
-          <a
-            className={styles.LinkProject}
-            href={LinkProject}
-            target="_blank"
-          >
-            Ir al sitio
-          </a>
+          {LinkProject ? (
+            <a
+              className={styles.LinkProject}
+              href={LinkProject}
+              target="_blank"
+            >
+              Ir al sitio
+            </a>
+          ) : null}
         </div>
       </div>
     </div>
