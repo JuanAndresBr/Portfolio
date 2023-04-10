@@ -29,6 +29,7 @@
   height: 50px;
   border: 2px solid var(--color-primario);
   cursor: pointer;
+  border-radius: 10px;
 }
 .botones button:hover {
   background-color: var(--color-hover);

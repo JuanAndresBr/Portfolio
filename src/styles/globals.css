@@ -1,16 +1,19 @@
 :root {
-  --color-primario: #BF3945;
-  --color-secundario: #BF364F;
+  --color-primario: #bf3945;
+  --color-secundario: #bf364f;
   --color-terciario: #732432;
-  --color-cuarto: #D9B4BB;
+  --color-cuarto: #d9b4bb;
   --color-quinto: #151626;
   --color-hover: #575757;
 }
 
-body, html{
+body,
+html {
   margin: 30px;
   padding: 0;
-  background-color: black ;
+  background-color: black;
   color: whitesmoke;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 2;
 }

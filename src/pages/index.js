@@ -1,16 +1,14 @@
 import Image from "next/image";
 import image from "../../public/fondo.png";
 import styles from "./page.module.css";
-import perfil from "../../public/perfil.jpg";
-import NavBar from "@/components/NavBar/NavBar";
 import { Inter } from "next/font/google";
-
+import { SiGithub } from "react-icons/si";
+import { IoLogoTwitter } from "react-icons/io";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <div className={styles.box}>
-      {" "}
       <div className={styles.container}>
         <h1>Full stack developer</h1>
         <Image
@@ -26,6 +24,14 @@ export default function Home() {
         >
           Mi CV
         </a>
+        <div className={styles.icons}>
+          <a href="https://github.com/JuanAndresBr" target="_banket">
+            <SiGithub size={60} />
+          </a>
+          <a>
+            <IoLogoTwitter size={60} />
+          </a>
+        </div>
       </div>
     </div>
   );
