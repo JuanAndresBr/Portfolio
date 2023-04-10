@@ -25,10 +25,10 @@ export default function Home() {
           Mi CV
         </a>
         <div className={styles.icons}>
-          <a href="https://github.com/JuanAndresBr" target="_banket">
+          <a  className={styles.icon} href="https://github.com/JuanAndresBr" target="_banket">
             <SiGithub size={60} />
           </a>
-          <a>
+          <a  className={styles.icon} href="https://twitter.com/J_AndresBr" target="_banket">
             <IoLogoTwitter size={60} />
           </a>
         </div>

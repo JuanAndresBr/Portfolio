@@ -1,5 +1,5 @@
 import styles from "./project.module.css";
-import GitHub from "../../../public/GitHub.png";
+import { SiGithub } from "react-icons/si";
 import Image from "next/image";
 
 export default function proyecto({
@@ -17,7 +17,7 @@ export default function proyecto({
         <Image className={styles.imagen} src={img} width="350" height="250" />
         <div>
           <a href={LinkGitHub} target="_blank">
-            <Image src={GitHub} width="60" height="60" />
+            <SiGithub size={60}/>
           </a>
           {LinkProject ? (
             <a

@@ -53,21 +53,21 @@
   padding: 30px;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container h1{
+.container h1 {
   color: var(--color-cuarto);
   border-bottom: 2px solid;
 }
-.Imagen{
+.Imagen {
   border-radius: 10px;
   border: 2px solid var(--color-terciario);
 }
-.link{
+.link {
   margin-top: 50px;
   padding: 12px 18px;
   border: 2px solid var(--color-primario);
@@ -75,10 +75,22 @@
   text-decoration: none;
   font-size: 20px;
 }
-.link:hover{
+.link:hover {
   background-color: #575757;
 }
 .Imagen {
   animation: mover 2s ease forwards;
 }
 
+.icons{
+  margin-top: 40px;
+}
+
+.icon{
+  padding: 20px;
+}
+
+.icons a{
+  color: white;
+  text-decoration: none;
+}
