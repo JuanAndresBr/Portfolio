@@ -22,7 +22,7 @@ const proyectos = [
   },
 ];
 
-export default function projects() {
+export default function Projects() {
   const [numProject, setNumProject] = useState(0);
 
   const handleButton = (e) => {

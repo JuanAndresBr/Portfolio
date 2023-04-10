@@ -16,6 +16,7 @@ export default function Home() {
           src={image}
           width="500"
           height="150"
+          alt="background"
         ></Image>
         <a
           className={styles.link}

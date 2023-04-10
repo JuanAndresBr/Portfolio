@@ -14,7 +14,7 @@ export default function proyecto({
       <h2>{title} </h2>
       <p>{description}</p>
       <div className={styles.box}>
-        <Image className={styles.imagen} src={img} width="350" height="250" />
+        <Image className={styles.imagen} src={img} width="350" height="250" alt="project" />
         <div>
           <a href={LinkGitHub} target="_blank">
             <SiGithub size={60}/>
