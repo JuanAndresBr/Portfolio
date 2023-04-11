@@ -20,16 +20,24 @@ export default function Home() {
         ></Image>
         <a
           className={styles.link}
-          href="https://drive.google.com/file/d/1QbDM2hXiELye1p9xL6maXyfB9gkjZ8zj/view?usp=share_link"
+          href="https://drive.google.com/file/d/1fmMnYdkYXjRNTjv-SNUZkmIibGKfEB19/view?usp=sharing"
           target="_blank"
         >
           Mi CV
         </a>
         <div className={styles.icons}>
-          <a  className={styles.icon} href="https://github.com/JuanAndresBr" target="_banket">
+          <a
+            className={styles.icon}
+            href="https://github.com/JuanAndresBr"
+            target="_banket"
+          >
             <SiGithub size={60} />
           </a>
-          <a  className={styles.icon} href="https://twitter.com/J_AndresBr" target="_banket">
+          <a
+            className={styles.icon}
+            href="https://twitter.com/J_AndresBr"
+            target="_banket"
+          >
             <IoLogoTwitter size={60} />
           </a>
         </div>
