@@ -1,3 +1,4 @@
+/* Estilos base */
 .imagenes {
   display: flex;
   justify-content: center;
@@ -6,6 +7,7 @@
   border-radius: 20px;
   border: 2px solid var(--color-cuarto);
 }
+
 .Image {
   padding: 30px;
   margin: 20px;
@@ -28,4 +30,27 @@
 
 .container h1{
   color: var(--color-secundario)
+}
+
+/* Media queries para hacer la sección responsive */
+@media screen and (max-width: 768px) {
+  .imagenes {
+    padding: 20px;
+  }
+  
+  .Image {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagenes {
+    padding: 10px;
+  }
+  
+  .Image {
+    padding: 10px;
+    margin: 5px;
+  }
 }

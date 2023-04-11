@@ -34,3 +34,23 @@
 .botones button:hover {
   background-color: var(--color-hover);
 }
+
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .botones {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

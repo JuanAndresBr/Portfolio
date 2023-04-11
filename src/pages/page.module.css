@@ -74,6 +74,7 @@
   color: var(--color-terciario);
   text-decoration: none;
   font-size: 20px;
+  border-radius: 10px;
 }
 .link:hover {
   background-color: #575757;
@@ -82,15 +83,61 @@
   animation: mover 2s ease forwards;
 }
 
-.icons{
+.icons {
   margin-top: 40px;
 }
 
-.icon{
+.icon {
   padding: 20px;
 }
 
-.icons a{
+.icons a {
   color: white;
   text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .header {
+    margin: 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .icons {
+    margin-top: 20px;
+  }
+
+  .icon {
+    padding: 10px;
+  }
+
+  .link {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 16px;
+  }
 }

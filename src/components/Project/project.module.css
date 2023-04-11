@@ -1,5 +1,3 @@
-
-
 .proyecto {
   display: flex;
   flex-direction: column;
@@ -44,3 +42,29 @@
 .imagen:hover{
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 768px) {
+  .proyecto {
+    width: 80%;
+  }
+
+  .box div {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .proyecto {
+    width: 100%;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box div {
+    margin: 10px 0;
+  }
+}
+

@@ -93,3 +93,53 @@
   transition: 0.3s ease;
   border: 2px solid rgb(255, 3, 3);
 }
+@media screen and (max-width: 768px) {
+  .form {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .boxes {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .error {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    width: 100%;
+    padding: 10px;
+  }
+  .form button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .form input{
+
+    font-size: 16px;
+    width: 200px;
+  }
+  .form textarea {
+    font-size: 16px;
+    max-width: 200px;
+    min-width: 100px;
+  }
+  .boxes {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .error {
+    font-size: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90;
+  }
+  .info{
+    font-size: 11px;
+  }
+}

@@ -29,3 +29,47 @@
   text-decoration: none;
   border-bottom: 3px solid transparent;
 }
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+  }
+
+  .list {
+    padding: 10px;
+  }
+
+  .Link h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .active h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box {
+    width: 20%;
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  .list {
+    padding: 20px;
+  }
+
+  .Link h2 {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .active h2 {
+    font-size: 24px;
+    margin: 10px;
+  }
+}
