@@ -6,7 +6,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { useState } from "react";
 import { testInputs } from "./validation";
 
-export default function contact() {
+export default function Contact() {
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
   const [data, setData] = useState({
     name: "",
