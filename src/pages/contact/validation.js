@@ -12,7 +12,7 @@ export function testInputs(inputs) {
   }else if(!regexEmail.test(inputs.email)){
     errors.email="Ingrese un email correcto por favor"
   }else if(inputs.message.length>500){
-    errors.message ="El email debe ser menor de 50o caracteres"
+    errors.message ="El email debe ser menor de 500 caracteres"
   } else if (!inputs.message) {
     errors.message = "Por favor ingrese el mensaje";
   }

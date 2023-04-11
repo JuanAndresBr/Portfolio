@@ -8,7 +8,11 @@ import { testInputs } from "./validation";
 
 export default function contact() {
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
-  const [data, setData] = useState({ name: "", email: "", message: "" });
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const sendEmail = (event) => {
     event.preventDefault();
     try {
@@ -34,8 +38,16 @@ export default function contact() {
   };
 
   function handleInputs(e) {
-    setData({ ...data, [e.target.name]: e.target.value });
-    setErrors(testInputs({ ...data, [e.target.name]: e.target.value }));
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+    setErrors(
+      testInputs({
+        ...data,
+        [e.target.name]: e.target.value,
+      })
+    );
   }
   return (
     <div className={styles.container}>
@@ -66,11 +78,13 @@ export default function contact() {
             <textarea
               className={errors.message && styles.warning}
               name="message"
+              maxLength={500}
               onChange={handleInputs}
               value={data.message}
             />
+            <p>{data.message.length} / 500</p>
             <p className={styles.error}>{errors.message}</p>
-            <button type="submit">Send</button>
+            <button type="submit">Enviar</button>
           </form>
         </div>
         <div className={styles.info}>
