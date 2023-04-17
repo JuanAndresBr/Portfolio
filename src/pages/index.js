@@ -20,7 +20,7 @@ export default function Home() {
         ></Image>
         <a
           className={styles.link}
-          href="https://drive.google.com/file/d/1fmMnYdkYXjRNTjv-SNUZkmIibGKfEB19/view?usp=sharing"
+          href="https://drive.google.com/file/d/1e43dNnCElFiEOewJO4CgzJZr1DLdZMa8/view?usp=sharing"
           target="_blank"
         >
           Mi CV
