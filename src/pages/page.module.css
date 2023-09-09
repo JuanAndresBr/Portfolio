@@ -17,7 +17,23 @@
     transform: translateX(0);
   }
 }
-
+@keyframes change-color {
+  0% {
+    border-color: black;
+  }
+  25% {
+    border-color: red;
+  }
+  50% {
+    border-color: blue;
+  }
+  75% {
+    border-color: green;
+  }
+  100% {
+    border-color: black;
+  }
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -25,6 +41,7 @@
   padding: 40px;
   border: 2px solid var(--color-cuarto);
   border-radius: 10px;
+  animation: change-color 10s infinite;
 }
 .header {
   display: flex;

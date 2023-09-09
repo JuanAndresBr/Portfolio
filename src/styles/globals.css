@@ -5,7 +5,10 @@
   --color-cuarto: #d9b4bb;
   --color-quinto: #151626;
   --color-hover: #575757;
+  --colores: #ff0000, #00ff00, #0000ff;
 }
+
+
 
 body,
 html {
