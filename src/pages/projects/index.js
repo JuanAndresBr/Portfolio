@@ -1,7 +1,7 @@
 "use client";
 import styles from "./projects.module.css";
 import Project from "../../components/Project/Project";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const proyectos = [
   {
@@ -22,45 +22,53 @@ const proyectos = [
   },
 ];
 
-export default function Projects() {
+const Projects = () => {
   const [numProject, setNumProject] = useState(0);
+  const [project, setProject] = useState(proyectos[0]);
 
   const handleButton = (e) => {
-    if (e.target.name === "siguiente") {
+    if (e.target.name === "siguiente" && numProject + 1 < proyectos.length) {
       setNumProject(numProject + 1);
-    } else {
+      setProject({
+        title: "",
+        description: "",
+        img: "",
+        LinkProject: "",
+        LinkGitHub: "",
+      });
+    } else if (e.target.name === "anterior" && numProject - 1 >= 0) {
       setNumProject(numProject - 1);
     }
   };
+
+  useEffect(() => {
+    setProject(proyectos[numProject]);
+  }, [numProject]);
 
   return (
     <div className={styles.body}>
       <div className={styles.header}>
         <div className={styles.botones}>
-          {numProject - 1 >= 0 ? (
+          {numProject - 1 >= 0 && (
             <button onClick={handleButton} name="anterior">
               Anterior
             </button>
-          ) : null}
+          )}
         </div>
         <h1>Proyectos</h1>
         <div className={styles.botones}>
-          {proyectos.length > 1 && numProject + 1 < proyectos.length ? (
+          {numProject + 1 < proyectos.length && (
             <button onClick={handleButton} name="siguiente">
               Siguiente
             </button>
-          ) : null}
+          )}
         </div>
       </div>
       <div className={styles.container}>
-        <Project
-          title={proyectos[numProject].title}
-          description={proyectos[numProject].description}
-          img={proyectos[numProject].img}
-          LinkProject={proyectos[numProject].LinkProject}
-          LinkGitHub={proyectos[numProject].LinkGitHub}
-        />
+        <Project {...project} />
       </div>
     </div>
   );
-}
+};
+
+export default Projects;
