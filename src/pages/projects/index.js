@@ -28,7 +28,6 @@ const Projects = () => {
 
   const handleButton = (e) => {
     if (e.target.name === "siguiente" && numProject + 1 < proyectos.length) {
-      setNumProject(numProject + 1);
       setProject({
         title: "",
         description: "",
@@ -36,7 +35,15 @@ const Projects = () => {
         LinkProject: "",
         LinkGitHub: "",
       });
+      setNumProject(numProject + 1);
     } else if (e.target.name === "anterior" && numProject - 1 >= 0) {
+      setProject({
+        title: "",
+        description: "",
+        img: "",
+        LinkProject: "",
+        LinkGitHub: "",
+      });
       setNumProject(numProject - 1);
     }
   };
