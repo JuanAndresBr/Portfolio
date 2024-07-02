@@ -3,7 +3,7 @@ import image from "../../public/fondo.png";
 import styles from "./page.module.css";
 import { Inter } from "next/font/google";
 import { SiGithub } from "react-icons/si";
-import { IoLogoTwitter } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
         ></Image>
         <a
           className={styles.link}
-          href="https://drive.google.com/file/d/1e43dNnCElFiEOewJO4CgzJZr1DLdZMa8/view?usp=sharing"
+          href="https://drive.google.com/file/d/1d0I1MAcwll0NyZIn6ILZi9Tf4FSoLVkO/view?usp=sharing"
           target="_blank"
         >
           Mi CV
@@ -38,7 +38,7 @@ export default function Home() {
             href="https://twitter.com/J_AndresBr"
             target="_banket"
           >
-            <IoLogoTwitter size={60} />
+            <FaXTwitter size={60} />
           </a>
         </div>
       </div>
