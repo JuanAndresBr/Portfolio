@@ -39,14 +39,15 @@ export default function Contact() {
       if (Object.keys(testInputs(data)).length === 0) {
         emailjs
           .sendForm(
-            "service_8pc8u24",
+            "service_ju9sxsj",
             "template_s7jon5u",
             event.target,
             "cYFOn0nKnAeGEMwqj"
           )
           .then((response) => alert("Su mensaje fue enviado exitosamente"))
           .catch((error) => {
-            alert("No fue posible enviar el mensaje");
+            console.log(error)
+            alert("No fue posible enviar el mensaje", error);
           });
         setData({ name: "", email: "", message: "" });
       } else {

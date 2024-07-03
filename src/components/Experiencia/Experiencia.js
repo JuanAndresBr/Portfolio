@@ -2,7 +2,6 @@ import styles from "./experiencia.module.css";
 import Image from "next/image";
 
 export default function experiencia({ title, description, funciones, img }) {
-  console.log(description);
   return (
     <div className={styles.proyecto}>
       <h2>{title} </h2>
