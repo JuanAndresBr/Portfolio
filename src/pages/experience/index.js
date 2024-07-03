@@ -8,9 +8,14 @@ const experiencias = [
     title: "Aprendiz inteligencia Comercial",
     description:
       "Prácticas profesionales que se desarrollaron en la empresa Estudio de Moda SAS, desde enero a julio del 2024 ",
-    funciones:['Apoyar los procesos modelos de ciencia de datos, evaluando y comparando algoritmos, para que se reflejen mejores resultados.','Aumentar la productividad y reducir tiempos de operación a las diferentes áreas de la compañía.','Documentación de procesos actuales que se encuentran en producción.','Participar activamente en las reuniones de seguimiento con los proveedores de desarrollo.', 'Desarrollar modelos enfocados en herramientas de mejoramiento del área.'],
-    img: "",
-  }
+    funciones: [
+      "Apoyar los procesos modelos de ciencia de datos, evaluando y comparando algoritmos, para que se reflejen mejores resultados.",
+      "Aumentar la productividad y reducir tiempos de operación a las diferentes áreas de la compañía.",
+      "Documentación de procesos actuales que se encuentran en producción.",
+      "Participar activamente en las reuniones de seguimiento con los proveedores de desarrollo.",
+      "Desarrollar modelos enfocados en herramientas de mejoramiento del área.",
+    ]
+  },
 ];
 
 const Experiencias = () => {
@@ -22,7 +27,7 @@ const Experiencias = () => {
       setProject({
         title: "",
         description: "",
-        funciones:"",
+        funciones: "",
         img: "",
       });
       setNumProject(numProject + 1);
@@ -30,7 +35,7 @@ const Experiencias = () => {
       setProject({
         title: "",
         description: "",
-        funciones:"",
+        funciones: "",
         img: "",
       });
       setNumProject(numProject - 1);

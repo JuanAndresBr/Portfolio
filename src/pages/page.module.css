@@ -55,8 +55,9 @@
 }
 
 .image {
-  border-radius: 50%;
+  border-radius: 20%;
   overflow: hidden;
+  border: 2px;
 }
 .image:hover {
   animation: jump 1s ease-in-out infinite;

@@ -62,6 +62,13 @@ export default function skills() {
           height="60"
           alt="redux"
         ></Image>
+                <Image
+          className={Styles.Image}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+          width="60"
+          height="60"
+          alt="redux"
+        ></Image>
       </div>
     </div>
   );

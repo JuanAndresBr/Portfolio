@@ -15,7 +15,7 @@ export default function Layout({children}) {
             <h1>Hola, soy Juan Andrés Bravo</h1>
           </div>
           <div className={styles.image}>
-            <Image src={perfil} width="120" height="120" alt="profile" />
+            <Image src={perfil} width="154" height="180" alt="profile" />
           </div>
         </header>
         <div className={styles.body}>

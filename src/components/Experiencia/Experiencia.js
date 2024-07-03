@@ -15,15 +15,6 @@ export default function experiencia({ title, description, funciones, img }) {
           </p>
         ))}
       </div>
-      <div className={styles.box}>
-        <Image
-          className={styles.imagen}
-          src={img}
-          width="350"
-          height="250"
-          alt="project"
-        />
-      </div>
     </div>
   );
 }
