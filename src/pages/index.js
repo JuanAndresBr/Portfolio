@@ -37,7 +37,7 @@ export default function Home() {
             className={styles.icon}
             href="https://twitter.com/J_AndresBr"
             target="_banket"
-          >
+          > 
             <FaXTwitter size={60} />
           </a>
         </div>
